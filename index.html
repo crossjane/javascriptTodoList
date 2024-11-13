@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>투두리스트</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div class="todo-container">
+      <div class="todo-header">투두리스트</div>
+      <input
+        type="text"
+        class="todo-input"
+        id="todoInput"
+        placeholder="할 일을 입력하세요"
+      />
+      <button class="add-btn" onclick="add()">추가하기</button>
+      <ul class="todo-list" id="todo-list">
+        <li class="todo-item">
+          <span>추가한 할일 </span>
+          <button class="update-btn">수정</button>
+          <button class="delete-btn">삭제</button>
+        </li>
+      </ul>
+    </div>
+  </body>
+
+  <script src="./index.js"></script>
+</html>
